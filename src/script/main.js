@@ -8,17 +8,18 @@ const shuffleButton = document.getElementById("shuffle");
 const allSongs = [
   {
     id: 0,
-    title: "Amalgam",
-    artist: "Rockot",
-    duration: "4.14",
-    src: "./src/audio/amalgam.mp3",
+    title: "Groovy Ambient Funk",
+    artist: "moodmode",
+    duration: "2.16",
+    src: "./src/audio/groovy-ambient-funk.mp3"
   },
   {
     id: 1,
-    title: "Creative Technology",
-    artist: "Pumpupthemind",
-    duration: "1.50",
-    src: "./src/audio/creative-technology-showreel.mp3",
+    title: "Perfect Beauty",
+    artist: "Good_B_Music",
+    duration: "7.20",
+    src: "./src/audio/perfect-beauty.mp3",
+   
   },
   {
     id: 2,
@@ -29,17 +30,17 @@ const allSongs = [
   },
   {
     id: 3,
-    title: "For Her Chill",
-    artist: "Lidérc",
-    duration: "2.13",
-    src: "./src/audio/for-her-chill.mp3",
+    title: "Movement",
+    artist: "SoulProdMusic",
+    duration: "2.35",
+    src: "./src/audio/movement.mp3",
   },
   {
     id: 4,
-    title: "Groovy Ambient Funk",
-    artist: "moodmode",
-    duration: "2.16",
-    src: "./src/audio/groovy-ambient-funk.mp3",
+    title: "Amalgam",
+    artist: "Rockot",
+    duration: "4.14",
+    src: "./src/audio/amalgam.mp3",
   },
   {
     id: 5,
@@ -50,10 +51,10 @@ const allSongs = [
   },
   {
     id: 6,
-    title: "Movement",
-    artist: "SoulProdMusic",
-    duration: "2.35",
-    src: "./src/audio/movement.mp3",
+    title: "For Her Chill",
+    artist: "Lidérc",
+    duration: "2.13",
+    src: "./src/audio/for-her-chill.mp3"
   },
   {
     id: 7,
@@ -71,24 +72,24 @@ const allSongs = [
   },
   {
     id: 9,
+    title: "Solitude",
+    artist: "lucafrancini",
+    duration: "2.38",
+    src: "./src/audio/solitude-dark.mp3"
+  },
+  {
+    id: 10,
+    title: "Creative Technology",
+    artist: "Pumpupthemind",
+    duration: "1.50",
+    src: "./src/audio/creative-technology-showreel.mp3"
+  },
+  {
+    id: 11,
     title: "No Place To Go",
     artist: "SergePavkinMusic",
     duration: "5.37",
     src: "./src/audio/no-place-to-go.mp3",
-  },
-  {
-    id: 10,
-    title: "Perfect Beauty",
-    artist: "Good_B_Music",
-    duration: "7.20",
-    src: "./src/audio/perfect-beauty.mp3",
-  },
-  {
-    id: 11,
-    title: "Solitude",
-    artist: "lucafrancini",
-    duration: "2.38",
-    src: "./src/audio/solitude-dark.mp3",
   },
 ];
 
@@ -119,5 +120,17 @@ const renderSongs = (array) => {
   playlistSongs.innerHTML = songsHTML;
 };
 
+const sortSongs = () => {
+  userData?.songs.sort((a,b)=>{
+    if(a.title < b.title){
+      return -1;
+    }
+    if(a.title > b.title){
+      return 1
+    }
+    return 0;
+  })
+  return userData?.songs
+} 
 
-renderSongs(userData?.songs)
+renderSongs(sortSongs());
