@@ -1,9 +1,9 @@
-Simple music player
+<h1>Simple music player</h1>
 
 <p><a href="https://lsandaruwanjayas.github.io/Music-Player" target="_blank">Live preview</a></p>
 
 
-Music credits
+<h2>Music credits</h2>
 <ul>
   <li>Amalgam : https://www.youtube.com/watch?v=KLPqo4DAspU</li>
   <li>Creative Technology: https://www.youtube.com/watch?v=za1nixKL7sU</li>
