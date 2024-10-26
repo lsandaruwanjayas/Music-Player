@@ -1,3 +1,3 @@
 Simple music player
 
-Live: https://lsandaruwanjayas.github.io/Music-Player/
+<a href="https://lsandaruwanjayas.github.io/Music-Player">Live: </a>
