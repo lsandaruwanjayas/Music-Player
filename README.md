@@ -1,8 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
 <h1>Simple music player</h1>
-
 <p><a href="https://lsandaruwanjayas.github.io/Music-Player" target="_blank">Live preview</a></p>
-
-
 <h2>Music credits</h2>
 <ul>
   <li>Amalgam : https://www.youtube.com/watch?v=KLPqo4DAspU</li>
@@ -18,3 +18,5 @@
   <li>Perfect Beauty: https://www.youtube.com/watch?v=BuGOiD_4qj0</li>
 <li>Solitude: https://www.youtube.com/watch?v=l8fmxHrIt1k</li>
 </ul>
+</body>
+</html>
